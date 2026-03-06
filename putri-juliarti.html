@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For Putri Juliarti ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --pink:#f9a8d4;--pink2:#ec4899;--pink3:#fce7f3;
+  --purple:#c4b5fd;--purple2:#8b5cf6;--purple3:#ede9fe;
+  --cream:#fff9f0;--white:#ffffff;
+  --text:#5b2f6e;--subtext:#a78abf;
+}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Quicksand',sans-serif;
+  background:linear-gradient(135deg,#fff0f5 0%,#f5f0ff 50%,#fff5f0 100%);
+  color:var(--text);
+  cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E%3Ctext y='16' font-size='16'%3E🩷%3C/text%3E%3C/svg%3E"),auto;
+  overflow-x:hidden;
+}
+
+/* ===== FLOATING HEARTS BG ===== */
+#heart-bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;}
+.fh{position:absolute;top:-50px;animation:floatDown linear infinite;font-size:20px;opacity:0;}
+@keyframes floatDown{
+  0%{transform:translateY(0) rotate(0deg) scale(1);opacity:0;}
+  10%{opacity:.7;}
+  90%{opacity:.4;}
+  100%{transform:translateY(105vh) rotate(360deg) scale(.5);opacity:0;}
+}
+
+/* ===== NAV ===== */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  background:rgba(255,255,255,.8);backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(249,168,212,.3);
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 20px;flex-wrap:wrap;
+}
+.nav-link{
+  padding:7px 18px;border-radius:50px;font-size:13px;font-weight:600;
+  color:var(--purple2);text-decoration:none;transition:.25s;
+  border:1.5px solid transparent;
+}
+.nav-link:hover{background:var(--purple3);border-color:var(--purple);transform:translateY(-2px);}
+
+/* ===== MUSIC BTN ===== */
+#music-btn{
+  position:fixed;bottom:24px;right:24px;z-index:200;
+  width:52px;height:52px;border-radius:50%;
+  background:linear-gradient(135deg,var(--pink2),var(--purple2));
+  border:none;cursor:pointer;font-size:22px;
+  box-shadow:0 4px 20px rgba(236,72,153,.4);
+  display:flex;align-items:center;justify-content:center;
+  transition:.3s;animation:musicPulse 2s ease-in-out infinite;
+}
+#music-btn:hover{transform:scale(1.1);}
+@keyframes musicPulse{0%,100%{box-shadow:0 4px 20px rgba(236,72,153,.4);}50%{box-shadow:0 4px 30px rgba(236,72,153,.7);}}
+
+/* ===== SECTIONS ===== */
+section{position:relative;z-index:1;padding:80px 20px 60px;}
+.container{max-width:860px;margin:0 auto;}
+
+/* ===== HERO ===== */
+#hero{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  text-align:center;flex-direction:column;gap:20px;
+  background:linear-gradient(160deg,#ffe4f0 0%,#f0e4ff 50%,#ffe4e4 100%);
+}
+.hero-sparkle{font-size:36px;animation:spin 4s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.hero-title{
+  font-family:'Pacifico',cursive;
+  font-size:clamp(32px,7vw,68px);
+  background:linear-gradient(135deg,var(--pink2),var(--purple2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+  line-height:1.2;text-shadow:none;
+  animation:fadeUp .8s ease both;
+}
+.hero-sub{
+  font-size:clamp(15px,2.5vw,19px);color:var(--subtext);
+  max-width:520px;line-height:1.7;font-style:italic;
+  animation:fadeUp .8s .2s ease both;opacity:0;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+
+.hero-btn{
+  margin-top:10px;
+  padding:16px 40px;border-radius:50px;border:none;
+  background:linear-gradient(135deg,#f472b6,#a78bfa);
+  color:#fff;font-family:'Quicksand',sans-serif;font-size:17px;font-weight:700;
+  cursor:pointer;
+  box-shadow:0 8px 24px rgba(244,114,182,.4);
+  transition:.3s;animation:fadeUp .8s .4s ease both;opacity:0;
+  position:relative;overflow:hidden;
+}
+.hero-btn::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,#a78bfa,#f472b6);
+  opacity:0;transition:.3s;
+}
+.hero-btn:hover{transform:translateY(-4px) scale(1.04);box-shadow:0 14px 32px rgba(244,114,182,.5);}
+.hero-btn:hover::before{opacity:1;}
+.hero-btn span{position:relative;z-index:1;}
+
+/* ===== SECTION HEADERS ===== */
+.sec-head{text-align:center;margin-bottom:40px;}
+.sec-head h2{
+  font-family:'Pacifico',cursive;
+  font-size:clamp(26px,5vw,40px);
+  background:linear-gradient(135deg,var(--pink2),var(--purple2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.sec-head p{color:var(--subtext);margin-top:8px;font-size:15px;font-style:italic;}
+.divider{width:60px;height:3px;background:linear-gradient(90deg,var(--pink2),var(--purple2));border-radius:2px;margin:12px auto 0;}
+
+/* ===== MEMORY CARDS ===== */
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;}
+.mem-card{
+  background:#fff;border-radius:24px;padding:32px 24px;text-align:center;
+  box-shadow:0 4px 20px rgba(196,181,253,.25);
+  border:1.5px solid rgba(249,168,212,.3);
+  cursor:pointer;transition:.3s;
+  position:relative;overflow:hidden;
+}
+.mem-card::before{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(252,231,243,.5),rgba(237,233,254,.5));
+  opacity:0;transition:.3s;
+}
+.mem-card:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 12px 32px rgba(196,181,253,.4);}
+.mem-card:hover::before{opacity:1;}
+.mem-icon{font-size:44px;margin-bottom:12px;display:block;}
+.mem-title{font-family:'Poppins',sans-serif;font-size:16px;font-weight:600;color:var(--text);margin-bottom:6px;}
+.mem-hint{font-size:12px;color:var(--subtext);font-style:italic;}
+
+/* ===== LOVE LETTER ===== */
+#letter{background:linear-gradient(160deg,#fff0f5,#f5f0ff);}
+.envelope-wrap{display:flex;justify-content:center;align-items:center;flex-direction:column;gap:20px;}
+.envelope{
+  width:200px;height:140px;background:linear-gradient(135deg,#fce7f3,#ede9fe);
+  border-radius:12px;border:2px solid rgba(249,168,212,.5);
+  cursor:pointer;position:relative;
+  box-shadow:0 8px 30px rgba(196,181,253,.3);
+  transition:.4s;display:flex;align-items:center;justify-content:center;
+  overflow:hidden;
+}
+.envelope:hover{transform:scale(1.06);box-shadow:0 16px 40px rgba(196,181,253,.5);}
+.env-flap{
+  position:absolute;top:0;left:0;right:0;height:70px;
+  background:linear-gradient(135deg,#f9a8d4,#c4b5fd);
+  clip-path:polygon(0 0,50% 80%,100% 0);
+  transition:.6s;transform-origin:top center;
+}
+.envelope.open .env-flap{transform:rotateX(-180deg);}
+.env-icon{font-size:40px;z-index:2;}
+.envelope.open .env-icon{animation:letterPop .5s .3s ease both;}
+@keyframes letterPop{from{transform:translateY(20px);opacity:0;}to{transform:translateY(0);opacity:1;}}
+.env-hint{font-size:14px;color:var(--subtext);font-style:italic;text-align:center;}
+
+/* ===== GAMES ===== */
+#games{background:linear-gradient(160deg,#fef9ff,#fff9fe);}
+.games-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+.game-card{
+  background:#fff;border-radius:24px;padding:28px 22px;text-align:center;
+  box-shadow:0 4px 20px rgba(249,168,212,.2);
+  border:1.5px solid rgba(196,181,253,.3);
+}
+.game-title{font-family:'Poppins',sans-serif;font-weight:600;font-size:17px;color:var(--text);margin-bottom:6px;}
+.game-desc{font-size:13px;color:var(--subtext);margin-bottom:18px;line-height:1.5;}
+
+/* Game 1 */
+#game1-area{
+  position:relative;height:160px;
+  background:linear-gradient(135deg,#fce7f3,#ede9fe);
+  border-radius:16px;overflow:hidden;margin-bottom:12px;
+}
+.fall-heart{position:absolute;font-size:26px;cursor:pointer;animation:fallHeart linear forwards;user-select:none;}
+@keyframes fallHeart{from{top:-30px;}to{top:110%;}  }
+#g1-score-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-size:13px;color:var(--subtext);}
+#g1-score-row b{color:var(--pink2);font-size:16px;}
+
+/* Game 2 */
+.q-options{display:flex;flex-direction:column;gap:10px;margin-top:14px;}
+.q-btn{
+  padding:11px 18px;border-radius:50px;border:1.5px solid var(--purple);
+  background:var(--purple3);color:var(--purple2);font-family:'Quicksand',sans-serif;
+  font-weight:600;font-size:14px;cursor:pointer;transition:.25s;
+}
+.q-btn:hover{background:var(--purple2);color:#fff;transform:scale(1.03);}
+
+/* Game 3 */
+.g3-btns{display:flex;gap:14px;justify-content:center;margin-top:16px;position:relative;height:60px;}
+.g3-love{
+  padding:14px 28px;border-radius:50px;border:none;
+  background:linear-gradient(135deg,var(--pink2),var(--purple2));
+  color:#fff;font-family:'Quicksand',sans-serif;font-weight:700;font-size:15px;
+  cursor:pointer;transition:.25s;
+}
+.g3-love:hover{transform:scale(1.06);}
+.g3-no{
+  padding:14px 28px;border-radius:50px;border:1.5px solid #f9a8d4;
+  background:#fff;color:#f472b6;font-family:'Quicksand',sans-serif;font-weight:700;font-size:15px;
+  cursor:pointer;position:absolute;transition:.15s;
+}
+
+/* ===== COUNTER ===== */
+#counter{background:linear-gradient(160deg,#fff5fb,#f5f0ff);}
+.counter-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:520px;margin:0 auto;}
+.cnt-box{
+  background:#fff;border-radius:20px;padding:24px 16px;text-align:center;
+  box-shadow:0 4px 20px rgba(249,168,212,.2);
+  border:1.5px solid rgba(196,181,253,.25);
+}
+.cnt-num{
+  font-family:'Pacifico',cursive;font-size:38px;
+  background:linear-gradient(135deg,var(--pink2),var(--purple2));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  line-height:1;
+}
+.cnt-lbl{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--subtext);margin-top:6px;}
+.counter-from{text-align:center;margin-top:20px;font-size:14px;color:var(--subtext);font-style:italic;}
+
+/* ===== POPUPS ===== */
+.overlay{
+  display:none;position:fixed;inset:0;z-index:300;
+  background:rgba(91,47,110,.3);backdrop-filter:blur(6px);
+  align-items:center;justify-content:center;
+}
+.overlay.show{display:flex;}
+.popup{
+  background:#fff;border-radius:28px;padding:40px 36px;
+  max-width:400px;width:90vw;text-align:center;
+  box-shadow:0 20px 60px rgba(196,181,253,.4);
+  animation:popIn .5s cubic-bezier(.175,.885,.32,1.275) both;
+  position:relative;
+}
+@keyframes popIn{from{transform:scale(.5);opacity:0;}to{transform:scale(1);opacity:1;}}
+.popup-icon{font-size:52px;margin-bottom:8px;display:block;}
+.popup-title{font-family:'Pacifico',cursive;font-size:24px;color:var(--pink2);margin-bottom:10px;}
+.popup-text{font-size:15px;color:var(--subtext);line-height:1.7;font-style:italic;}
+.popup-close{
+  margin-top:20px;padding:12px 32px;border-radius:50px;border:none;
+  background:linear-gradient(135deg,var(--pink2),var(--purple2));
+  color:#fff;font-family:'Quicksand',sans-serif;font-weight:700;font-size:14px;
+  cursor:pointer;transition:.25s;
+}
+.popup-close:hover{transform:scale(1.05);}
+
+/* ===== CONFETTI ===== */
+.confetti-piece{
+  position:fixed;top:-20px;width:10px;height:14px;
+  border-radius:3px;animation:confettiFall linear forwards;
+  pointer-events:none;z-index:500;
+}
+@keyframes confettiFall{
+  0%{transform:translateY(0) rotate(0deg) scaleX(1);}
+  50%{transform:translateY(50vh) rotate(360deg) scaleX(-1);}
+  100%{transform:translateY(110vh) rotate(720deg) scaleX(1);opacity:0;}
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;padding:40px 20px;
+  background:linear-gradient(135deg,#fce7f3,#ede9fe);
+  font-family:'Pacifico',cursive;font-size:22px;color:var(--pink2);
+  position:relative;z-index:1;
+}
+footer p{font-family:'Quicksand',sans-serif;font-size:14px;color:var(--subtext);margin-top:6px;font-style:italic;}
+
+@media(max-width:480px){
+  .counter-grid{grid-template-columns:repeat(3,1fr);}
+  .cnt-num{font-size:28px;}
+}
+</style>
+</head>
+<body>
+
+<!-- FLOATING HEARTS BG -->
+<div id="heart-bg"></div>
+
+<!-- MUSIC BTN -->
+<button id="music-btn" onclick="toggleMusic()" title="Music">🎵</button>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-link" href="#hero">🏠 Home</a>
+  <a class="nav-link" href="#memories">💭 Memories</a>
+  <a class="nav-link" href="#letter">💌 Letter</a>
+  <a class="nav-link" href="#games">🎮 Games</a>
+  <a class="nav-link" href="#counter">⏰ Counter</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="container" style="display:flex;flex-direction:column;align-items:center;gap:20px;">
+    <span class="hero-sparkle">✨</span>
+    <h1 class="hero-title">For Putri Juliarti ❤️</h1>
+    <p class="hero-sub">Website kecil ini aku buat khusus untuk kamu, Putri Juliarti. Karena kamu selalu jadi orang yang spesial buat aku. 🌸</p>
+    <button class="hero-btn" onclick="heroBtnClick()"><span>💖 Klik kalau Putri sayang aku</span></button>
+  </div>
+</section>
+
+<!-- ===== MEMORIES ===== -->
+<section id="memories">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Memories With Putri 🌸</h2>
+      <p>Setiap momen bersamamu selalu membekas di hatiku</p>
+      <div class="divider"></div>
+    </div>
+    <div class="cards-grid">
+      <div class="mem-card" onclick="showMemory(0)">
+        <span class="mem-icon">🌟</span>
+        <div class="mem-title">First Time We Met</div>
+        <div class="mem-hint">Klik untuk buka kenangan 💕</div>
+      </div>
+      <div class="mem-card" onclick="showMemory(1)">
+        <span class="mem-icon">📸</span>
+        <div class="mem-title">Our Favorite Moment</div>
+        <div class="mem-hint">Klik untuk buka kenangan 💕</div>
+      </div>
+      <div class="mem-card" onclick="showMemory(2)">
+        <span class="mem-icon">💝</span>
+        <div class="mem-title">Things I Love About Putri</div>
+        <div class="mem-hint">Klik untuk buka kenangan 💕</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOVE LETTER ===== -->
+<section id="letter">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Love Letter 💌</h2>
+      <p>Ada surat spesial untukmu</p>
+      <div class="divider"></div>
+    </div>
+    <div class="envelope-wrap">
+      <div class="envelope" id="envelope" onclick="openEnvelope()">
+        <div class="env-flap"></div>
+        <span class="env-icon">💌</span>
+      </div>
+      <p class="env-hint" id="env-hint">Klik amplop untuk membuka surat cinta ✨</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GAMES ===== -->
+<section id="games">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Mini Games 🎮</h2>
+      <p>Main yuk bareng aku!</p>
+      <div class="divider"></div>
+    </div>
+    <div class="games-grid">
+
+      <!-- GAME 1 -->
+      <div class="game-card">
+        <div class="game-title">🎯 Catch The Heart</div>
+        <div class="game-desc">Tangkap sebanyak mungkin hati dalam 15 detik!</div>
+        <div id="g1-score-row">
+          <span>Skor: <b id="g1-score">0</b></span>
+          <span id="g1-timer">⏱ 15 detik</span>
+        </div>
+        <div id="game1-area"></div>
+        <button class="popup-close" style="width:100%;margin-top:12px;" onclick="startGame1()">▶ Mulai!</button>
+      </div>
+
+      <!-- GAME 2 -->
+      <div class="game-card">
+        <div class="game-title">💬 Love Question</div>
+        <div class="game-desc" style="margin-bottom:8px;">Siapa cewek paling cantik di dunia?</div>
+        <div class="q-options">
+          <button class="q-btn" onclick="answerQ()">Putri Juliarti 🌸</button>
+          <button class="q-btn" onclick="answerQ()">Putri Juliarti banget 💕</button>
+          <button class="q-btn" onclick="answerQ()">Ya jelas Putri Juliarti ❤️</button>
+        </div>
+        <div id="q-result" style="display:none;margin-top:14px;font-size:14px;color:var(--pink2);font-weight:600;font-style:italic;"></div>
+      </div>
+
+      <!-- GAME 3 -->
+      <div class="game-card">
+        <div class="game-title">🤔 Funny Button</div>
+        <div class="game-desc">Pilih satu tombol di bawah ini!</div>
+        <div class="g3-btns" id="g3-wrap">
+          <button class="g3-love" onclick="loveClick()">❤️ I Love You</button>
+          <button class="g3-no" id="g3-no" onmousemove="runAway(event)" onclick="runAway(event)">💔 No</button>
+        </div>
+        <div id="g3-result" style="margin-top:50px;font-size:13px;color:var(--subtext);font-style:italic;"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== COUNTER ===== -->
+<section id="counter">
+  <div class="container">
+    <div class="sec-head">
+      <h2>Since We Met ⏰</h2>
+      <p>Sudah berapa lama aku mengenal Putri Juliarti</p>
+      <div class="divider"></div>
+    </div>
+    <div class="counter-grid">
+      <div class="cnt-box"><div class="cnt-num" id="cnt-d">0</div><div class="cnt-lbl">Hari</div></div>
+      <div class="cnt-box"><div class="cnt-num" id="cnt-h">0</div><div class="cnt-lbl">Jam</div></div>
+      <div class="cnt-box"><div class="cnt-num" id="cnt-m">0</div><div class="cnt-lbl">Menit</div></div>
+    </div>
+    <div class="counter-from">Sejak pertama kali kita bertemu 💕</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  Made with ❤️ for Putri Juliarti
+  <p>Kamu selalu spesial buat aku, selamanya 🌸</p>
+</footer>
+
+<!-- ===== POPUPS ===== -->
+<!-- Hero popup -->
+<div class="overlay" id="hero-popup">
+  <div class="popup">
+    <span class="popup-icon">🎉</span>
+    <div class="popup-title">Yeay! 💕</div>
+    <div class="popup-text">Aku juga sayang Putri lebih banyak! Kamu adalah satu-satunya yang membuat hatiku penuh setiap harinya ❤️</div>
+    <button class="popup-close" onclick="closePopup('hero-popup')">Aaaaw~ 🥰</button>
+  </div>
+</div>
+
+<!-- Memory popup -->
+<div class="overlay" id="mem-popup">
+  <div class="popup">
+    <span class="popup-icon" id="mem-icon">🌟</span>
+    <div class="popup-title" id="mem-ptitle"></div>
+    <div class="popup-text" id="mem-ptext"></div>
+    <button class="popup-close" onclick="closePopup('mem-popup')">Makasih ❤️</button>
+  </div>
+</div>
+
+<!-- Letter popup -->
+<div class="overlay" id="letter-popup">
+  <div class="popup">
+    <span class="popup-icon">📜</span>
+    <div class="popup-title">Untuk Putri Juliarti,</div>
+    <div class="popup-text">Terima kasih sudah hadir dalam hidupku. Kamu selalu membuat hari-hariku lebih bahagia, lebih berwarna, dan lebih berarti. Setiap senyummu adalah hadiah yang paling indah buatku. 🌸💕</div>
+    <button class="popup-close" onclick="closePopup('letter-popup')">Aku baca sudah 💌</button>
+  </div>
+</div>
+
+<!-- Game popup -->
+<div class="overlay" id="game-popup">
+  <div class="popup">
+    <span class="popup-icon" id="gp-icon">🎊</span>
+    <div class="popup-title" id="gp-title"></div>
+    <div class="popup-text" id="gp-text"></div>
+    <button class="popup-close" onclick="closePopup('game-popup')">Hehe~ 😄</button>
+  </div>
+</div>
+
+<script>
+/* ===== FLOATING HEARTS ===== */
+const hbg = document.getElementById('heart-bg');
+const heartEmojis = ['💕','💗','💖','💝','🌸','✨','💓','🩷'];
+function spawnHeart(){
+  const el = document.createElement('div');
+  el.className = 'fh';
+  el.textContent = heartEmojis[Math.floor(Math.random()*heartEmojis.length)];
+  const dur = 5 + Math.random()*7;
+  el.style.cssText = `left:${Math.random()*100}vw;font-size:${14+Math.random()*20}px;animation-duration:${dur}s;animation-delay:${Math.random()*3}s;`;
+  hbg.appendChild(el);
+  if(hbg.children.length > 80) hbg.removeChild(hbg.children[0]);
+}
+setInterval(spawnHeart, 300);
+
+/* ===== MUSIC ===== */
+const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+let musicPlaying = false;
+let musicOscillators = [];
+const musicBtn = document.getElementById('music-btn');
+
+function playNote(freq, startTime, duration, gainVal=0.06){
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.connect(gain); gain.connect(audioCtx.destination);
+  osc.type = 'sine';
+  osc.frequency.value = freq;
+  gain.gain.setValueAtTime(0, startTime);
+  gain.gain.linearRampToValueAtTime(gainVal, startTime + 0.05);
+  gain.gain.linearRampToValueAtTime(0, startTime + duration - 0.05);
+  osc.start(startTime); osc.stop(startTime + duration);
+  return osc;
+}
+
+const melody = [523,587,659,698,784,880,784,698,659,587,523,494,440,494,523,587];
+const beatLen = 0.45;
+let melodyInterval;
+
+function startMelody(){
+  let i = 0;
+  melodyInterval = setInterval(()=>{
+    if(!musicPlaying){clearInterval(melodyInterval);return;}
+    playNote(melody[i % melody.length], audioCtx.currentTime, beatLen * 1.8);
+    i++;
+  }, beatLen * 1000);
+}
+
+function toggleMusic(){
+  if(audioCtx.state === 'suspended') audioCtx.resume();
+  musicPlaying = !musicPlaying;
+  musicBtn.textContent = musicPlaying ? '🎶' : '🎵';
+  if(musicPlaying) startMelody();
+  else clearInterval(melodyInterval);
+}
+
+/* ===== HERO BTN ===== */
+function heroBtnClick(){
+  showOverlay('hero-popup');
+  spawnConfetti();
+  spawnBurstHearts();
+}
+
+/* ===== POPUP HELPERS ===== */
+function showOverlay(id){ document.getElementById(id).classList.add('show'); }
+function closePopup(id){ document.getElementById(id).classList.remove('show'); }
+
+/* ===== MEMORIES ===== */
+const memories = [
+  { icon:'🌟', title:'First Time We Met', text:'Masih ingat pertama kali kita ketemu? Saat itu aku langsung tau, ada sesuatu yang spesial dari kamu, Putri. Senyummu yang pertama itu masih aku ingat sampai sekarang 🌸' },
+  { icon:'📸', title:'Our Favorite Moment', text:'Setiap momen bersamamu adalah momen favoritku. Tapi yang paling spesial adalah ketika kita bisa ketawa bareng hal-hal kecil dan konyol. Semoga kita punya lebih banyak momen indah lagi ya 💕' },
+  { icon:'💝', title:'Things I Love About Putri', text:'Senyummu yang manis 🌸, tawamu yang bikin hari lebih cerah ☀️, caramu peduli sama orang lain 💗, dan semua hal kecil yang kamu lakukan — semua itu bikin aku makin sayang sama kamu, Putri ❤️' }
+];
+function showMemory(i){
+  const m = memories[i];
+  document.getElementById('mem-icon').textContent = m.icon;
+  document.getElementById('mem-ptitle').textContent = m.title;
+  document.getElementById('mem-ptext').textContent = m.text;
+  showOverlay('mem-popup');
+}
+
+/* ===== ENVELOPE ===== */
+let envOpened = false;
+function openEnvelope(){
+  if(envOpened) return;
+  envOpened = true;
+  document.getElementById('envelope').classList.add('open');
+  document.getElementById('env-hint').textContent = '💌 Membuka surat...';
+  setTimeout(()=>{ showOverlay('letter-popup'); document.getElementById('env-hint').textContent = ''; }, 700);
+}
+
+/* ===== GAME 1 ===== */
+let g1Running = false, g1Score = 0, g1Time = 15, g1Interval, g1HInterval;
+function startGame1(){
+  if(g1Running) return;
+  g1Running = true; g1Score = 0; g1Time = 15;
+  document.getElementById('g1-score').textContent = 0;
+  const area = document.getElementById('game1-area');
+  area.innerHTML = '';
+
+  g1HInterval = setInterval(()=>{
+    if(!g1Running) return;
+    const h = document.createElement('div');
+    h.className = 'fall-heart';
+    h.textContent = heartEmojis[Math.floor(Math.random()*heartEmojis.length)];
+    const dur = 1.2 + Math.random()*1.5;
+    h.style.cssText = `left:${Math.random()*85}%;animation-duration:${dur}s;top:-30px;`;
+    h.addEventListener('click', ()=>{
+      g1Score++;
+      document.getElementById('g1-score').textContent = g1Score;
+      h.style.transform = 'scale(2)';
+      h.style.opacity = '0';
+      setTimeout(()=>h.remove(), 200);
+    });
+    area.appendChild(h);
+    setTimeout(()=>{ if(h.parentNode) h.remove(); }, dur*1000+100);
+  }, 600);
+
+  g1Interval = setInterval(()=>{
+    g1Time--;
+    document.getElementById('g1-timer').textContent = `⏱ ${g1Time} detik`;
+    if(g1Time <= 0){
+      clearInterval(g1Interval); clearInterval(g1HInterval);
+      g1Running = false;
+      const area = document.getElementById('game1-area');
+      area.innerHTML = '';
+      document.getElementById('g1-timer').textContent = '⏱ 15 detik';
+      const high = g1Score >= 10;
+      document.getElementById('gp-icon').textContent = high ? '🏆' : '💕';
+      document.getElementById('gp-title').textContent = high ? 'Wah Keren!' : 'Good Try!';
+      document.getElementById('gp-text').textContent = high
+        ? `Wow Putri cepat juga menangkap cintaku! Skor kamu ${g1Score} hati ❤️`
+        : `Gapapa Putri, cintaku tetap buat kamu kok 😆 Skor: ${g1Score} hati`;
+      showOverlay('game-popup');
+    }
+  }, 1000);
+}
+
+/* ===== GAME 2 ===== */
+function answerQ(){
+  const r = document.getElementById('q-result');
+  r.style.display = 'block';
+  r.textContent = '✅ Jawaban benar! Karena Putri memang paling cantik ❤️';
+  spawnBurstHearts();
+}
+
+/* ===== GAME 3 ===== */
+function loveClick(){
+  spawnConfetti(); spawnBurstHearts();
+  const r = document.getElementById('g3-result');
+  r.textContent = '🥰 Aku juga cinta Putri Juliarti ❤️';
+  r.style.color = '#ec4899'; r.style.fontWeight = '700';
+}
+function runAway(e){
+  const btn = document.getElementById('g3-no');
+  const wrap = document.getElementById('g3-wrap');
+  const rect = wrap.getBoundingClientRect();
+  const bw = rect.width, bh = wrap.offsetHeight || 60;
+  let nx = Math.random() * (bw - 80);
+  let ny = Math.random() * (bh - 20);
+  btn.style.left = nx + 'px';
+  btn.style.top = ny + 'px';
+}
+
+/* ===== COUNTER ===== */
+// ✏️ UBAH TANGGAL DI SINI (YYYY, MM-1, DD, HH, MM, SS)
+const startDate = new Date(2024, 0, 1, 0, 0, 0); // 1 Januari 2024
+
+function updateCounter(){
+  const now = new Date();
+  const diff = now - startDate;
+  const days = Math.floor(diff / 86400000);
+  const hours = Math.floor((diff % 86400000) / 3600000);
+  const mins = Math.floor((diff % 3600000) / 60000);
+  document.getElementById('cnt-d').textContent = days;
+  document.getElementById('cnt-h').textContent = hours;
+  document.getElementById('cnt-m').textContent = mins;
+}
+updateCounter();
+setInterval(updateCounter, 10000);
+
+/* ===== CONFETTI ===== */
+const confettiColors = ['#f9a8d4','#c4b5fd','#6ee7b7','#fde68a','#fca5a5','#a5f3fc'];
+function spawnConfetti(){
+  for(let i=0;i<60;i++){
+    const c = document.createElement('div');
+    c.className = 'confetti-piece';
+    c.style.cssText = `
+      left:${Math.random()*100}vw;
+      background:${confettiColors[Math.floor(Math.random()*confettiColors.length)]};
+      width:${6+Math.random()*8}px;height:${10+Math.random()*8}px;
+      animation-duration:${1.5+Math.random()*2}s;
+      animation-delay:${Math.random()*.5}s;
+      border-radius:${Math.random()<.5?'50%':'3px'};
+    `;
+    document.body.appendChild(c);
+    setTimeout(()=>c.remove(), 3500);
+  }
+}
+
+/* ===== BURST HEARTS ===== */
+function spawnBurstHearts(){
+  for(let i=0;i<20;i++){
+    setTimeout(()=>{
+      const h = document.createElement('div');
+      h.style.cssText = `
+        position:fixed;z-index:400;pointer-events:none;
+        font-size:${20+Math.random()*24}px;
+        left:${20+Math.random()*60}vw;
+        top:${20+Math.random()*60}vh;
+        animation:floatDown ${1.5+Math.random()*2}s linear forwards;
+      `;
+      h.textContent = heartEmojis[Math.floor(Math.random()*heartEmojis.length)];
+      document.body.appendChild(h);
+      setTimeout(()=>h.remove(), 3000);
+    }, i*80);
+  }
+}
+</script>
+</body>
+</html>
